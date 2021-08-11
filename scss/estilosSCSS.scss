@@ -6,7 +6,7 @@
 @import "container";
 @import "contenedor";
 @import  "contacto";
-
+@import "error404";
 .contenedor {
 	width: 90%;
 	max-width: 1000px;
@@ -79,4 +79,77 @@
 .contenedor .footer {
 	color: #fff;
 	grid-area: footer;
+}
+@media screen and (min-width: 320px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-2 sidebar"
+						 "footer footer footer";
+	.header{
+		height: 20px;
+width:20px;
+}
+
+@media screen and (min-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-2 sidebar"
+						 "footer footer footer";
+
+                        
+
+    }
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-1 widget-2"
+						 "footer footer footer";
+
+					  
+.header{
+    height: 100px;
+    width:700px;
+}
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+    .contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-2 sidebar"
+						 "footer footer footer";
+
+							        
+    }
+.header{
+    height: 100px;
+    width:900px;
+}
+@media screen and (min-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-2 sidebar"
+						 "footer footer footer";
+
+					 		            
+    }
+
+		}					 
+}
+}
+}
+}
 }

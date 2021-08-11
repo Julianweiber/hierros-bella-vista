@@ -13,6 +13,12 @@ body {
 	background-image:linear-gradient(to bottom,#525252,#2b2828,#292828,#292828,#292828,#703538);
 }
 
+
+  
+
+
+
+
 .contenedor {
 	width: 90%;
 	max-width: 1000px;
@@ -96,7 +102,7 @@ body {
 						 "widget-1 widget-2 sidebar"
 						 "footer footer footer";
 
-                         background-color:white;
+                        
     }
 .header{
     height: 100px;
@@ -178,29 +184,7 @@ color:honeydew;
 li:nth-of-type(1):hover { border-bottom: 3px dotted red;
     
 }
-/* Aqui esta el submenu
-.submenu{
-position:absolute;
-display:none;
-margin-top: 10px;
-transition: 1s ease;
-border-radius:20px;
-display: inline-block;
-text-decoration: none;
 
-transition-duration: 0.2s;
-}
-
-
-
-.submenu a{
-
-    font-size:15px;
-    margin:3px;
-    padding:3px;
-    transition: 3s ease;
-
-*/
 .nav ul ul{
     display:none;
     position:absolute;
@@ -259,66 +243,13 @@ color:white;
 footer{
 	background-color: rgb(90, 35, 35);
 }
-@media screen and (min-width: 768px){
-	.contenedor {
-		grid-template-areas: "header header header"
-						 "contenido contenido sidebar"
-						 "contenido contenido sidebar"
-						 "widget-1 widget-2 sidebar"
-						 "footer footer footer";
 
-                         
-
-    }
-
-@media screen and (max-width: 768px){
-	.contenedor {
-		grid-template-areas: "header header header"
-						 "contenido contenido sidebar"
-						 "contenido contenido sidebar"
-						 "widget-1 widget-1 widget-2"
-						 "footer footer footer";
-
-                         
-    }
-.header{
-    height: 100px;
-    width:700px;
-}
-}
-
-
-
-
-@media screen and (min-width: 1024px){
-    .contenedor {
-		grid-template-areas: "header header header"
-						 "contenido contenido contenido"
-						 "contenido contenido sidebar"
-						 "widget-1 widget-2 sidebar"
-						 "footer footer footer";
-
-                         
-    }
-.header{
-    height: 100px;
-    width:900px;
-}
-@media screen and (min-width: 768px){
-	.contenedor {
-		grid-template-areas: "header header header"
-						 "contenido contenido contenido"
-						 "contenido contenido sidebar"
-						 "widget-1 widget-2 sidebar"
-						 "footer footer footer";
-
-                         
-    }
 .header{
     height: 100px;
     width:1024px;}
-}
-}
+
+
+
 .tienda{
 font-size:large;
 font-family: 'Big Shoulders Display', cursive;
@@ -332,4 +263,4 @@ font-family: 'Big Shoulders Display', cursive;
 	
 
 
-}
+
