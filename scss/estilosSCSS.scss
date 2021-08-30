@@ -1,0 +1,113 @@
+@import "tienda";
+@import "footer";
+@import "contenedor";
+@import  "contacto";
+
+.contenedor {
+	width: 100%;
+	max-width: 100%;
+	margin: 1rem auto;
+	display: grid;
+	grid-gap: 0,1rem;
+	grid-template-columns: repeat (5, 2fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: 
+                         "header header header"
+						 "banner banner banner"
+						 "pagos pagos pagos"
+						 "horario horario horario"
+					     "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .banner,
+.contenedor .pagos,
+.contenedor .horario
+.contenedor .footer {
+
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	
+	color: #fff;
+	grid-area: header;
+	
+
+}
+
+.contenedor .banner {
+	grid-area: banner;
+	width: 100%;
+	height: 5%; 
+}
+.contenedor .banner .imagen{
+	height: 100%; 
+	width: 100%;
+}
+.contenedor .pagos {
+	grid-area: pagos;
+	text-align: left;
+	color:white;
+	width: 100%;
+	height: auto;
+opacity: 0.7;
+}
+.contenedor .pagos .fp{
+	text-align: center;
+}
+
+.contenedor .horario {
+	grid-area: horario;
+	text-align: center;
+	background-color:transparent;
+	color:white;
+	text-transform: uppercase;
+}
+
+.contenedor .footer {
+	background-color: rgb(148, 39, 39);
+	color: rgb(255, 255, 255);
+	opacity: .2;
+	width: 100%;
+	height: auto;
+	grid-area: footer;
+	text-decoration: none;
+
+}
+.contenedor .footer #copyright{
+	text-align: right;
+	text-transform: lowercase;
+	font-size: 1rem;
+}
+
+.tienda{
+	font-size:large;
+	font-family: 'Big Shoulders Display', cursive;
+	
+	}
+.contacto{
+		color:rgb(218, 217, 217);
+		font-size: 1.7rem;
+	}
+
+.nosotros{
+	margin: 1rem;
+	padding: 1rem;
+	color:rgb(182, 182, 182);
+	font-size: 1.6rem;
+}
+.como-llegar .ubicacion{
+	justify-content: center;
+	color:rgb(182, 182, 182);
+	font-size: 1.6rem;
+}
+.como-llegar .mapa-guia{
+	color:rgb(182, 182, 182);
+	font-size: 1.6rem;
+
+	
+}
