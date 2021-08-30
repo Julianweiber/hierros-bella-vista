@@ -1,0 +1,159 @@
+
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&display=swap');
+	
+	
+	margin: 0;
+	padding: 0;
+}
+.titulo{
+	color:white;
+	font-size: large;
+	font-weight: bold;
+	letter-spacing: 0ch;
+	text-align: center;
+	letter-spacing:10px;
+	font-family: 'Big Shoulders Display', cursive;
+	text-transform: uppercase;
+	}
+	
+body {
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	background-image:linear-gradient(to bottom,#525252,#2b2828,#292828,#292828,#292828,#703538);
+}
+
+body .wsp
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+.contenedor {
+	width: 100%;
+	max-width: 100%;
+	margin: 1rem auto;
+	display: grid;
+	grid-gap: 0,1rem;
+	grid-template-columns: repeat (5, 2fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: 
+                         "header header header"
+						 "banner banner banner"
+						 "pagos pagos pagos"
+						 "horario horario horario"
+					     "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .banner,
+.contenedor .pagos,
+.contenedor .horario
+.contenedor .footer {
+
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	
+	color: #fff;
+	grid-area: header;
+	
+
+}
+
+.contenedor .banner {
+	grid-area: banner;
+	width: 100%;
+	height: 5%; 
+}
+.contenedor .banner .imagen{
+	height: 100%; 
+	width: 100%;
+}
+.contenedor .pagos {
+	grid-area: pagos;
+	text-align: left;
+	color:white;
+	width: 100%;
+	height: auto;
+opacity: 0.7;
+}
+.contenedor .pagos .fp{
+	text-align: center;
+}
+
+.contenedor .horario {
+	grid-area: horario;
+	text-align: center;
+	background-color:transparent;
+	color:white;
+	text-transform: uppercase;
+}
+
+.contenedor .footer {
+	background-color: rgb(148, 39, 39);
+	color: rgb(255, 255, 255);
+	opacity: .2;
+	width: 100%;
+	height: auto;
+	grid-area: footer;
+	text-decoration: none;
+
+}
+.contenedor .footer #copyright{
+	text-align: right;
+	text-transform: lowercase;
+	font-size: 1rem;
+}
+
+.tienda{
+	font-size:large;
+	font-family: 'Big Shoulders Display', cursive;
+	
+	}
+.contacto{
+		color:rgb(218, 217, 217);
+		font-size: 1.7rem;
+	}
+
+.nosotros{
+	margin: 1rem;
+	padding: 1rem;
+	color:rgb(182, 182, 182);
+	font-size: 1.6rem;
+}
+.como-llegar .ubicacion{
+	justify-content: center;
+	color:rgb(182, 182, 182);
+	font-size: 1.6rem;
+}
+.como-llegar .mapa-guia{
+	color:rgb(182, 182, 182);
+	font-size: 1.6rem;
+
+	
+}
+
