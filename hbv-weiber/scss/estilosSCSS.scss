@@ -1,32 +1,30 @@
-@import "widget-2";
-@import  "widget-1";
 @import "tienda";
-@import "sidebar";
 @import "footer";
-@import "container";
 @import "contenedor";
 @import  "contacto";
 
 .contenedor {
-	width: 90%;
-	max-width: 1000px;
-	margin: 20px auto;
+	width: 100%;
+	max-width: 100%;
+	margin: 1rem auto;
 	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: repeat (5, 1fr);
+	grid-gap: 0,1rem;
+	grid-template-columns: repeat (5, 2fr);
 	grid-template-rows: repeat(4, auto);
 
 	grid-template-areas: 
                          "header header header"
-						 "contenido contenido sidebar"
-						 "widget-1 widget-2 sidebar"
+						 "banner banner banner"
+						 "pagos pagos pagos"
+						 "horario horario horario"
 					     "footer footer footer";
 }
 
 .contenedor > div,
 .contenedor .header,
-.contenedor .contenido,
-.contenedor .sidebar,
+.contenedor .banner,
+.contenedor .pagos,
+.contenedor .horario
 .contenedor .footer {
 
 	padding: 20px;
@@ -37,46 +35,79 @@
 	
 	color: #fff;
 	grid-area: header;
+	
+
 }
 
-.contenedor .contenido {
-	grid-area: contenido;
-    
+.contenedor .banner {
+	grid-area: banner;
+	width: 100%;
+	height: 5%; 
 }
-
-.contenedor .sidebar {
-	grid-column: 3 / 4;
+.contenedor .banner .imagen{
+	height: 100%; 
+	width: 100%;
+}
+.contenedor .pagos {
+	grid-area: pagos;
+	text-align: left;
+	color:white;
+	width: 100%;
+	height: auto;
+opacity: 0.7;
+}
+.contenedor .pagos .fp{
 	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100px;
-	grid-area: sidebar;
-}
-.contenido .sidebar a:hover {
-	width:40% auto;
-	height: 50% auto;
 }
 
-.contenedor .widget-1,
-.contenedor .widget-2 {
-	color: #fff;
-	height: 100px;
+.contenedor .horario {
+	grid-area: horario;
 	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.contenedor .widget-1 {
-	grid-area: widget-1;
-}
-
-.contenedor .widget-2 {
-	grid-area: widget-2;
+	background-color:transparent;
+	color:white;
+	text-transform: uppercase;
 }
 
 .contenedor .footer {
-	color: #fff;
+	background-color: rgb(148, 39, 39);
+	color: rgb(255, 255, 255);
+	opacity: .2;
+	width: 100%;
+	height: auto;
 	grid-area: footer;
+	text-decoration: none;
+
+}
+.contenedor .footer #copyright{
+	text-align: right;
+	text-transform: lowercase;
+	font-size: 1rem;
+}
+
+.tienda{
+	font-size:large;
+	font-family: 'Big Shoulders Display', cursive;
+	
+	}
+.contacto{
+		color:rgb(218, 217, 217);
+		font-size: 1.7rem;
+	}
+
+.nosotros{
+	margin: 1rem;
+	padding: 1rem;
+	color:rgb(182, 182, 182);
+	font-size: 1.6rem;
+}
+.como-llegar .ubicacion{
+	justify-content: center;
+	color:rgb(182, 182, 182);
+	font-size: 1.6rem;
+}
+.como-llegar .mapa-guia{
+	color:rgb(182, 182, 182);
+	font-size: 1.6rem;
+
+	
 }

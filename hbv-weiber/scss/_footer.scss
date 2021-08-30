@@ -1,0 +1,15 @@
+.contenedor .footer {
+	background-color: rgb(148, 39, 39);
+	color: rgb(255, 255, 255);
+	opacity: .2;
+	width: 100%;
+	height: auto;
+	grid-area: footer;
+	text-decoration: none;
+
+}
+.contenedor .footer #copyright{
+	text-align: right;
+	text-transform: lowercase;
+	font-size: 1rem;
+}
